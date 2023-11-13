@@ -22,7 +22,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az afd endpoint purge --resource-group "rg-front-door" --profile-name jimwelchafd --endpoint-name "staticweb-fja2gxeug6d5bwg0.z01.azurefd.net" --domains jimwelch.org --content-paths '/*'
+           az afd endpoint purge --resource-group "rg-front-door" --profile-name jimwelchafd --endpoint-name "staticweb" --domains test.jimwelch.org --content-paths '/*'
   # Azure logout
     - name: logout
       run: |
